@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .custom-option {
+            margin-top: 10px;
+        }
+        .option-item {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .hidden {
+            display: none;
+        }
+        #reviewSection {
+            margin-top: 20px;
+        }
+        .move-buttons {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imeachtaí a thaitin leat...</h1>
+    <form id="optionsForm">
+        <div id="optionsSection">
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 3  Oíche Airneáin An Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionlach "> Eanáir 3  Oíche Airneáin An Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionlach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 9  Ciorcal comhrá Cabairí na gCártaí i dTigh Chóilí "> Eanáir 9  Ciorcal comhrá Cabairí na gCártaí i dTigh Chóilí  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 10  PopUp Gaeltacht sa Dew Drop Inn "> Eanáir 10  PopUp Gaeltacht sa Dew Drop Inn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 10  Club Leabhar Cois Fharraige i dTigh Mholly  (Solas Geimhridh – Laoighseach Ní Choistealbha)"> Eanáir 10  Club Leabhar Cois Fharraige i dTigh Mholly  (Solas Geimhridh – Laoighseach Ní Choistealbha) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 12  Ciorcal comhrá Cnoc na Cathrach san Óstán Clybaun "> Eanáir 12  Ciorcal comhrá Cnoc na Cathrach san Óstán Clybaun  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 16  Ciorcal comhrá Cabairí na gCártaí i dTigh Neachtain "> Eanáir 16  Ciorcal comhrá Cabairí na gCártaí i dTigh Neachtain  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 17  Club Leabhar i Charlie Byrne’s  (An Nollaig Thiar– Breandán Ó hEithir & Nollaig Oileánach – Micheál Ó Conghaile)"> Eanáir 17  Club Leabhar i Charlie Byrne’s  (An Nollaig Thiar– Breandán Ó hEithir & Nollaig Oileánach – Micheál Ó Conghaile) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 17  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Eanáir 17  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 17  Oíche Airneáin An Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionlach "> Eanáir 17  Oíche Airneáin An Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionlach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 23  Tae agus Phlé i Sult, Ollscoil na Gaillimhe "> Eanáir 23  Tae agus Phlé i Sult, Ollscoil na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 24  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Eanáir 24  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 25  Ciorcal comhrá i Súil Eile Spás, Bearna "> Eanáir 25  Ciorcal comhrá i Súil Eile Spás, Bearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 28  Ceardlann crosóga Bhríde agus fleascanna i Súil Eile Spás "> Eanáir 28  Ceardlann crosóga Bhríde agus fleascanna i Súil Eile Spás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 30  Ciorcal comhrá Cabairí na gCártaí sa Front Door "> Eanáir 30  Ciorcal comhrá Cabairí na gCártaí sa Front Door  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 31  Ceardlann crosóga Bríde i gCaife na Gaeilge "> Eanáir 31  Ceardlann crosóga Bríde i gCaife na Gaeilge  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 31  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Eanáir 31  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Eanáir 31  Oíche Airneáin An Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionlach "> Eanáir 31  Oíche Airneáin An Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionlach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 1 — 4 Féile Tonnta"> Feabhra 1 — 4 Féile Tonnta </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 1  Ciorcal comhrá i Solas FRC, Áth Cinn "> Feabhra 1  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 1  Podchraoladh beo: Beo ar Éigean sa Taibhdhearc "> Feabhra 1  Podchraoladh beo: Beo ar Éigean sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 1  Seisún Ceol na mBan sa Crane "> Feabhra 1  Seisún Ceol na mBan sa Crane  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 1  TradRave sa Róisín Dubh "> Feabhra 1  TradRave sa Róisín Dubh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 2  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Feabhra 2  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 2  Maidin Chaife Chois Fharraige sa Bláth Fiáin, An Spidéal "> Feabhra 2  Maidin Chaife Chois Fharraige sa Bláth Fiáin, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 2  Scéalta do Pháistí sa Leabharlann "> Feabhra 2  Scéalta do Pháistí sa Leabharlann  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 2  Ceol, greann, filíocht agus buirlisc Mnásome Geeze sa Róisín Dubh "> Feabhra 2  Ceol, greann, filíocht agus buirlisc Mnásome Geeze sa Róisín Dubh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 2  Altan sa Town Hall Theatre "> Feabhra 2  Altan sa Town Hall Theatre  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 2  Club na Féile sa Taibhdhearc "> Feabhra 2  Club na Féile sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 3 — 4 Drámaí “Faoiseamh” agus “The Two Loaves of Gabriel Foley” i Scoil Mhuire, Maigh Chuilinn "> Feabhra 3 — 4 Drámaí “Faoiseamh” agus “The Two Loaves of Gabriel Foley” i Scoil Mhuire, Maigh Chuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 3  Cainteanna agus Ceardlanna (cartúin, íoga, croise Bhríde, bia, Gaeilge…) sa Portershed "> Feabhra 3  Cainteanna agus Ceardlanna (cartúin, íoga, croise Bhríde, bia, Gaeilge…) sa Portershed  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 3  Scéalta dátheangach i Charlie Byrne’s "> Feabhra 3  Scéalta dátheangach i Charlie Byrne’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 3  Liam Ó Maonlaí sa Taibhdhearc "> Feabhra 3  Liam Ó Maonlaí sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 3  Céilí san Fhaiche Mhór "> Feabhra 3  Céilí san Fhaiche Mhór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 3  Taibhiúcháin tine san Fhaiche Mhór "> Feabhra 3  Taibhiúcháin tine san Fhaiche Mhór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 4  Pictiúrlann Puffin Rock agus Cairde Nua i bPálás "> Feabhra 4  Pictiúrlann Puffin Rock agus Cairde Nua i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 4  Lá na bPáistí (péinteáil éadan, ceardlann rap, sorcas…) sa Portershed "> Feabhra 4  Lá na bPáistí (péinteáil éadan, ceardlann rap, sorcas…) sa Portershed  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 4  The Dirty Circus buirlisc agus ceabaire sa Taibhdhearc "> Feabhra 4  The Dirty Circus buirlisc agus ceabaire sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 6  Ciorcal comhrá Cabairí na gCártaí sa Skeff "> Feabhra 6  Ciorcal comhrá Cabairí na gCártaí sa Skeff  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 6  Club leabhar CLEAS in Oifig Ghaeilge Locha Riach  (Athmháthair le Michela Murgia)"> Feabhra 6  Club leabhar CLEAS in Oifig Ghaeilge Locha Riach  (Athmháthair le Michela Murgia) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 7  Ciorcal comhrá i Bia Bearna "> Feabhra 7  Ciorcal comhrá i Bia Bearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 7  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Feabhra 7  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 8  Ciorcal comhrá i Solas FRC, Áth Cinn "> Feabhra 8  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 8  Tráth na gCeist i dTigh Terry, Ros a Mhíl"> Feabhra 8  Tráth na gCeist i dTigh Terry, Ros a Mhíl </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 9  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Feabhra 9  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 13  Ciorcal comhrá Cabairí na gCártaí sa Western Hotel "> Feabhra 13  Ciorcal comhrá Cabairí na gCártaí sa Western Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 14  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Feabhra 14  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 14  Club leabhar Cois Fharraige i dTigh Mholly  (Oiread na Fríde le Jackie Mac Donncha)"> Feabhra 14  Club leabhar Cois Fharraige i dTigh Mholly  (Oiread na Fríde le Jackie Mac Donncha) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 15  Ciorcal comhrá i Solas FRC, Áth Cinn "> Feabhra 15  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 16  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Feabhra 16  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 20  Caife agus Comhrá do scoláirí agus baill foirne i Friar’s, NUIG "> Feabhra 20  Caife agus Comhrá do scoláirí agus baill foirne i Friar’s, NUIG  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 20  Ciorcal comhrá Cabairí na gCártaí in O’Connell’s "> Feabhra 20  Ciorcal comhrá Cabairí na gCártaí in O’Connell’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 21  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Feabhra 21  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 21  Club Leabhar i Charlie Byrne’s  (Flaitheas le Proinsias Mac a’Bhaird)"> Feabhra 21  Club Leabhar i Charlie Byrne’s  (Flaitheas le Proinsias Mac a’Bhaird) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 21  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Feabhra 21  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 22  Ciorcal comhrá i Solas FRC, Áth Cinn "> Feabhra 22  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 23  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Feabhra 23  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 27  Ciorcal comhrá Cabairí na gCártaí sa King’s Head "> Feabhra 27  Ciorcal comhrá Cabairí na gCártaí sa King’s Head  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 28  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Feabhra 28  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 28  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Feabhra 28  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 29  Ciorcal comhrá i Solas FRC, Áth Cinn "> Feabhra 29  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Feabhra 29  Ciorcal comhrá i Súil Eile Spás, Bearna "> Feabhra 29  Ciorcal comhrá i Súil Eile Spás, Bearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 1-15 Imeachtaí Seachtain na Gaeilge in Ollscoil na Gaillimhe"> Márta 1-15 Imeachtaí Seachtain na Gaeilge in Ollscoil na Gaillimhe </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 1  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Márta 1  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 1  Maidin Chaife Chois Fharraige sa Bláth Fiáin, An Spidéal "> Márta 1  Maidin Chaife Chois Fharraige sa Bláth Fiáin, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 1  Maidin Caifé i dTeach na Gaeilge, Maigh Cuilinn "> Márta 1  Maidin Caifé i dTeach na Gaeilge, Maigh Cuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 1  Tráth na gCeist san Crúiscín Lán, An Spidéal "> Márta 1  Tráth na gCeist san Crúiscín Lán, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 1  Ciorcal amhránaíochta in Oifig Gaeilge Locha Riach "> Márta 1  Ciorcal amhránaíochta in Oifig Gaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 1  Seoladh Sheachtain na Gaeilge in Áras na nGael "> Márta 1  Seoladh Sheachtain na Gaeilge in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 2  Siúlóid thart ar cathair na Gaillimhe ón Scairdeán ag an Fhaiche Mhór "> Márta 2  Siúlóid thart ar cathair na Gaillimhe ón Scairdeán ag an Fhaiche Mhór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 2  Léacht Scéal na Gaeilge agus Scoil Thaimhain i Leabharlann Órán Mór "> Márta 2  Léacht Scéal na Gaeilge agus Scoil Thaimhain i Leabharlann Órán Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 3  Scannán Puffin Rock agus Cairde Nua i bPálás "> Márta 3  Scannán Puffin Rock agus Cairde Nua i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 3  Ceardlann Coimicí Gael Locha Riach in Ionad Comworks "> Márta 3  Ceardlann Coimicí Gael Locha Riach in Ionad Comworks  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 3  Scannán: 20,000 Specieas den Bheach i Seanscoil Sailearna, Indreabhán "> Márta 3  Scannán: 20,000 Specieas den Bheach i Seanscoil Sailearna, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 4  Seimineár GAELFAM: Gaeltacht Families and Multi-lingualism i Seomra 214, Áras na Gaeilge, OnaG "> Márta 4  Seimineár GAELFAM: Gaeltacht Families and Multi-lingualism i Seomra 214, Áras na Gaeilge, OnaG  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 4  Club léitheoireachta d’fhoghlaimeoirí fásta in Oifig Gaeilge Locha Riach  (Lig Sinn i gCathú le Breandán Ó hEithir)"> Márta 4  Club léitheoireachta d’fhoghlaimeoirí fásta in Oifig Gaeilge Locha Riach  (Lig Sinn i gCathú le Breandán Ó hEithir) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 4  Ciorcal comhrá in Áras na nGael "> Márta 4  Ciorcal comhrá in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 5  Ceardlann scéalaíochta san Taibhdhearc "> Márta 5  Ceardlann scéalaíochta san Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 5  Tráth na gCeist dhátheangach i bPálás "> Márta 5  Tráth na gCeist dhátheangach i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 5  Ciorcal comhrá Cabairí na gCártaí i mBarr an Chaladh "> Márta 5  Ciorcal comhrá Cabairí na gCártaí i mBarr an Chaladh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 6  Caife agus Comhrá i bPlámás "> Márta 6  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 6  Ceardlann amhránaíochta sean-nós i 4 Distillery Road "> Márta 6  Ceardlann amhránaíochta sean-nós i 4 Distillery Road  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 6  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Márta 6  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 7  Ciorcal comhrá i Solas FRC, Áth Cinn "> Márta 7  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 7  Tae & Plé d’fhoireann na hOllscoile i gClub na Foirne "> Márta 7  Tae & Plé d’fhoireann na hOllscoile i gClub na Foirne  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 7  Caife agus Comhrá i bPlámás "> Márta 7  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 7  PopUp Gaeltacht i McGinn’s "> Márta 7  PopUp Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 8  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Márta 8  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 8  Rang Gaeilge do chairde idirnáisiúnta in Áras na nGael "> Márta 8  Rang Gaeilge do chairde idirnáisiúnta in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 8  Taispeántas drámaíochta trí Ghaeilge sa Téatar BoI, OnaG "> Márta 8  Taispeántas drámaíochta trí Ghaeilge sa Téatar BoI, OnaG  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 8  Guerrilla Gaeilge i Smokey’s, OnaG leis an bhfuirseoir Áine Gallagher "> Márta 8  Guerrilla Gaeilge i Smokey’s, OnaG leis an bhfuirseoir Áine Gallagher  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 8  Oíche Shóisialta i Tom Sheridan’s "> Márta 8  Oíche Shóisialta i Tom Sheridan’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 9  Rith 5km Jog ar an mBog ag An Cloch Scaoilte "> Márta 9  Rith 5km Jog ar an mBog ag An Cloch Scaoilte  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 9  Siúlóid Bhithéagsúlachta ag faire ar Éin, ó carrchlós Scoil Bhríde, Mionloch "> Márta 9  Siúlóid Bhithéagsúlachta ag faire ar Éin, ó carrchlós Scoil Bhríde, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 9  Comórtas amhránaíochta ar an sean-nós Corn Uí Chon Cheanainn in Áras na Gaeilge "> Márta 9  Comórtas amhránaíochta ar an sean-nós Corn Uí Chon Cheanainn in Áras na Gaeilge  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 9  Oiche Áirneáin na Féile Padraig i dTearmann na Foirnéise, Camus Uachtair "> Márta 9  Oiche Áirneáin na Féile Padraig i dTearmann na Foirnéise, Camus Uachtair  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 10  Aifreann Gaelach san Ardeaglais "> Márta 10  Aifreann Gaelach san Ardeaglais  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 10  Scannán Rún Cheannannais Mhór i bPálás "> Márta 10  Scannán Rún Cheannannais Mhór i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 10  Céilí Mór i nGaelscoil Mhic Amhlaidh "> Márta 10  Céilí Mór i nGaelscoil Mhic Amhlaidh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 11  Seimineár Ní leor 2.2%: Feachtais Theilifíse Chonradh na Gaeilge sna 1970í & 1980í i Seomra 214, Áras na Gaeilge, OnaG "> Márta 11  Seimineár Ní leor 2.2%: Feachtais Theilifíse Chonradh na Gaeilge sna 1970í & 1980í i Seomra 214, Áras na Gaeilge, OnaG  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 11  Seisiún Aireachais in Áras na Gaeilge, OnaG "> Márta 11  Seisiún Aireachais in Áras na Gaeilge, OnaG  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 11  Ciorcal comhrá in Áras na nGael "> Márta 11  Ciorcal comhrá in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 12  Maidin caifé sa Hardiman Hotel "> Márta 12  Maidin caifé sa Hardiman Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 12  Lón Foirne i Seomra 211, Áras na Gaeilge, OnaG "> Márta 12  Lón Foirne i Seomra 211, Áras na Gaeilge, OnaG  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Maidin chaifé ar mhaithe le hairgead a bhailiú do mhuintir Gaza in Áras na Gaeilge, OnaG "> Márta 13  Maidin chaifé ar mhaithe le hairgead a bhailiú do mhuintir Gaza in Áras na Gaeilge, OnaG  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Ciorcal comhrá tuismitheoirí Gaelscoil Dara "> Márta 13  Ciorcal comhrá tuismitheoirí Gaelscoil Dara  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Lá Glas Naíonraí Chonamara Láir in Ionad Pobail Chill Chiaráin "> Márta 13  Lá Glas Naíonraí Chonamara Láir in Ionad Pobail Chill Chiaráin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Márta 13  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Caife agus Comhrá i bPlámás "> Márta 13  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Márta 13  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch "> Márta 13  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 13  Club leabhar Cois Fharraige i dTigh Mholly  (Seanchas Jimmí Chearra Chois Fharraige) + ceol dá ndiaidh"> Márta 13  Club leabhar Cois Fharraige i dTigh Mholly  (Seanchas Jimmí Chearra Chois Fharraige) + ceol dá ndiaidh </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 14  Ciorcal comhrá i Solas FRC, Áth Cinn "> Márta 14  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 14  Caife agus Comhrá i bPlámás "> Márta 14  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 14  Oiche amhránaíochta ar an tsean-nós i Leabharlann na Cathrach "> Márta 14  Oiche amhránaíochta ar an tsean-nós i Leabharlann na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 14  Ceardlann Déanta Cártaí in Áras Mhic Amhlaigh "> Márta 14  Ceardlann Déanta Cártaí in Áras Mhic Amhlaigh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15–17 Dráma An Solas Dearg i Seanscoil Sailearna "> Márta 15–17 Dráma An Solas Dearg i Seanscoil Sailearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Márta 15  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Taispeántas agus caint caoladóireachta i Leabharlann na Cathrach "> Márta 15  Taispeántas agus caint caoladóireachta i Leabharlann na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Tráthnóna ceoil agus Scannáin i Leabharlann an Spidéil "> Márta 15  Tráthnóna ceoil agus Scannáin i Leabharlann an Spidéil  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Lá Gaeilge Mhaigh Cuilinn i dTeach na Gaeilge "> Márta 15  Lá Gaeilge Mhaigh Cuilinn i dTeach na Gaeilge  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Ceardlann Mhanglaim sa Taibhdhearc "> Márta 15  Ceardlann Mhanglaim sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Bronnadh Sraith-Phictiúirí Fhéile Raifteirí i Leabharlann Baile Locha Riach "> Márta 15  Bronnadh Sraith-Phictiúirí Fhéile Raifteirí i Leabharlann Baile Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  PopUp Gaeltacht i Dawdy’s, Baile Locha Riach "> Márta 15  PopUp Gaeltacht i Dawdy’s, Baile Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Oíche shóisialta phleanáil teanga Árainn i dTí Watty "> Márta 15  Oíche shóisialta phleanáil teanga Árainn i dTí Watty  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 15  Oíche Áirneáin na Féile Pádraig i dTigh Chualáin, Indreabhán "> Márta 15  Oíche Áirneáin na Féile Pádraig i dTigh Chualáin, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 16  Gaeilgeatón na Gaillimhe sa Taibhdhearc "> Márta 16  Gaeilgeatón na Gaillimhe sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 17  Scannán Amhrán na Mara i bPálás "> Márta 17  Scannán Amhrán na Mara i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 17  Oíche biongó agus Raifil san Halla Pobail, Inis Meáin "> Márta 17  Oíche biongó agus Raifil san Halla Pobail, Inis Meáin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 18  Ceardlann amhránaíochta do pháistí i dTeach Uí Chiaráin, Cora Finne "> Márta 18  Ceardlann amhránaíochta do pháistí i dTeach Uí Chiaráin, Cora Finne  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 18  Ciorcal comhrá in Áras na nGael "> Márta 18  Ciorcal comhrá in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 20  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Márta 20  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 20  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Márta 20  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 21  Ciorcal comhrá i Solas FRC, Áth Cinn "> Márta 21  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 22  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Márta 22  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 25  Ciorcal comhrá in Áras na nGael "> Márta 25  Ciorcal comhrá in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 26  Siompóisiam Eacnamaíoch san Ionad Cuimhneachán na Imirceachárna "> Márta 26  Siompóisiam Eacnamaíoch san Ionad Cuimhneachán na Imirceachárna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 26  Ciorcal comhrá Cabairí na gCártaí i Mary Mullens’ "> Márta 26  Ciorcal comhrá Cabairí na gCártaí i Mary Mullens’  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 27  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Márta 27  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 27  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Márta 27  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 27  Oíche Shóisialta i dTeach na Gaeilge, Maigh Cuilinn "> Márta 27  Oíche Shóisialta i dTeach na Gaeilge, Maigh Cuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 27  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch "> Márta 27  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 28  Ciorcal comhrá i Solas FRC, Áth Cinn "> Márta 28  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 28  Ciorcal comhrá i Súil Eile Space, Bearna "> Márta 28  Ciorcal comhrá i Súil Eile Space, Bearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 28  For the Love of Milseáin leis an bhfuirseoir Áine Gallagher sa King’s Head"> Márta 28  For the Love of Milseáin leis an bhfuirseoir Áine Gallagher sa King’s Head </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 28  Dráma Dúmhál le Micheál Ó Conghaile (agus seisiún dá ndiaidh) i dTigh Mholly, Indreabhán "> Márta 28  Dráma Dúmhál le Micheál Ó Conghaile (agus seisiún dá ndiaidh) i dTigh Mholly, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Márta 29  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach "> Márta 29  Ciorcal comhrá san Óstán Clybaun, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 3  Ceardlann ar smideadh in Inis Fáil, An Spidéal "> Aibreán 3  Ceardlann ar smideadh in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 7  Scéal na Gaillimhe sa Taibhdhearc "> Aibreán 7  Scéal na Gaillimhe sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 9  Ciorcal comhrá Cabairí na gCártaí i Murty Rabbitte’s "> Aibreán 9  Ciorcal comhrá Cabairí na gCártaí i Murty Rabbitte’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 10  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Aibreán 10  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 10  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch "> Aibreán 10  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 11  Ceardlann snaidhmeanna i gComhar Chomhán "> Aibreán 11  Ceardlann snaidhmeanna i gComhar Chomhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 12  Ciorcal comhrá sa Clybaun Hotel "> Aibreán 12  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 12-13 Gníomhaíochas, an Ghaeilge, agus na Meáin in Áras na Gaeilge, OÉG"> Aibreán 12-13 Gníomhaíochas, an Ghaeilge, agus na Meáin in Áras na Gaeilge, OÉG </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 13  Siúlóid Dúlra ó Oifig Gaeilge Locha Riach "> Aibreán 13  Siúlóid Dúlra ó Oifig Gaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 12-14 Féile an Phobail ar Inis Oírr"> Aibreán 12-14 Féile an Phobail ar Inis Oírr </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 16  Ciorcal comhrá Cabairí na gCártaí in An Púcán "> Aibreán 16  Ciorcal comhrá Cabairí na gCártaí in An Púcán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 17  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Aibreán 17  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 17  Tráth na gCeist i Tom Sheridan’s, Clybaun Road "> Aibreán 17  Tráth na gCeist i Tom Sheridan’s, Clybaun Road  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 17  Clubleabhar Gaeilge i Charlie Byrne’s  (Oiread na Fríde le Jackie Mac Donncha, agus Lig Sinn i gCathú le Breandán Ó hEithir)"> Aibreán 17  Clubleabhar Gaeilge i Charlie Byrne’s  (Oiread na Fríde le Jackie Mac Donncha, agus Lig Sinn i gCathú le Breandán Ó hEithir) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 19  Ciorcal comhrá sa Clybaun Hotel "> Aibreán 19  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 20  Siúlóid Lá i gCathú ó Cearnóg na hOllscoile "> Aibreán 20  Siúlóid Lá i gCathú ó Cearnóg na hOllscoile  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 20  Lá Mór Siamsaíochta GaeilgeABC in Áras Mhic Amhlaigh "> Aibreán 20  Lá Mór Siamsaíochta GaeilgeABC in Áras Mhic Amhlaigh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 23  Ciorcal comhrá Cabairí na gCártaí i O’Connell’s "> Aibreán 23  Ciorcal comhrá Cabairí na gCártaí i O’Connell’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 24  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Aibreán 24  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 24  Tionól Poiblí don Bhruach Thoir san Óstán Maldron, Tír Oileáin "> Aibreán 24  Tionól Poiblí don Bhruach Thoir san Óstán Maldron, Tír Oileáin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 25  Ciorcal comhrá i Súil Eile Space "> Aibreán 25  Ciorcal comhrá i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 25  Imram le Róise Ní Bhaoill mar chuid de Cúirt sa Taibhdhearc "> Aibreán 25  Imram le Róise Ní Bhaoill mar chuid de Cúirt sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 25  PopUp Gaeltacht i McGinn’s "> Aibreán 25  PopUp Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 26  Ciorcal comhrá sa Clybaun Hotel "> Aibreán 26  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 26  Dinnseanchas mar chuid de Cúirt san Taibhdhearc "> Aibreán 26  Dinnseanchas mar chuid de Cúirt san Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 27  An Drúchtín agus an Seilide mar chuid de Cúirt san Taibhdhearc "> Aibreán 27  An Drúchtín agus an Seilide mar chuid de Cúirt san Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 28  Story Tellers mar chuid de Cúirt san Taibhdhearc "> Aibreán 28  Story Tellers mar chuid de Cúirt san Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Aibreán 30  Ciorcal comhrá Cabairí na gCártaí i Carroll’s "> Aibreán 30  Ciorcal comhrá Cabairí na gCártaí i Carroll’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 3  Dráma Ní Liomsa an Teach Álainn Seo sa Taibhdhearc "> Bealtaine 3  Dráma Ní Liomsa an Teach Álainn Seo sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 4  Siúlóid dúlra i gCoill na Ceathrún Báine, Maigh Cuilin "> Bealtaine 4  Siúlóid dúlra i gCoill na Ceathrún Báine, Maigh Cuilin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 4  Inis Iron Meáin ar Inis Meáin"> Bealtaine 4  Inis Iron Meáin ar Inis Meáin </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 5  Siúlóid bláthanna fiáine ar Inis Meáin "> Bealtaine 5  Siúlóid bláthanna fiáine ar Inis Meáin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 7  Ceardlann dráma Brú sa Téatar BOI "> Bealtaine 7  Ceardlann dráma Brú sa Téatar BOI  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 7  Ciorcal comhrá Cabairí na gCártaí i Kennedy’s "> Bealtaine 7  Ciorcal comhrá Cabairí na gCártaí i Kennedy’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 8  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Bealtaine 8  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 8  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch "> Bealtaine 8  Oíche Airneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 9  Maidin chaifé i Leabharlann Cathair na Gaillimhe "> Bealtaine 9  Maidin chaifé i Leabharlann Cathair na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 11  Ceardlann Manglaim san Taibhdhearc "> Bealtaine 11  Ceardlann Manglaim san Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 12  Siúlóid Bláthanna Fiáine ó Trá Inis Oírr "> Bealtaine 12  Siúlóid Bláthanna Fiáine ó Trá Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 13  Oíche Ólaíochta – Pint of Science as Gaeilge sa Hole in the Wall "> Bealtaine 13  Oíche Ólaíochta – Pint of Science as Gaeilge sa Hole in the Wall  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 15  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Bealtaine 15  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 15  Clubleabhar Gaeilge i Charlie Byrne’s  (Imram agus Scéalta eile le Róise Ní Bhaoill)"> Bealtaine 15  Clubleabhar Gaeilge i Charlie Byrne’s  (Imram agus Scéalta eile le Róise Ní Bhaoill) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 17  Lá na Rothar i Scoil Bhríde, Mionloch "> Bealtaine 17  Lá na Rothar i Scoil Bhríde, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 17  Ciorcal comhrá sa Clybaun Hotel "> Bealtaine 17  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 21  Clubleabhar d’fhoghlaimeoirí i Súil Eile Spás "> Bealtaine 21  Clubleabhar d’fhoghlaimeoirí i Súil Eile Spás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 22  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Bealtaine 22  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 23  Cluichí agus Cártaí i Donnelly’s, Bearna "> Bealtaine 23  Cluichí agus Cártaí i Donnelly’s, Bearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 24  Ciorcal comhrá sa Clybaun Hotel "> Bealtaine 24  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 25  Léargas ar bhia dhúcasach na Gaeltachta idir Garraí Glas & Pota Café  – DÍOLTA AMACH"> Bealtaine 25  Léargas ar bhia dhúcasach na Gaeltachta idir Garraí Glas & Pota Café  – DÍOLTA AMACH </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 27  Caife agus Comhrá i bPlámás "> Bealtaine 27  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 28  Ciorcal comhrá Cabairí na gCártaí sa Hole in the Wall "> Bealtaine 28  Ciorcal comhrá Cabairí na gCártaí sa Hole in the Wall  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 29  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Bealtaine 29  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 30  Ciorcal comhrá i Súil Eile Space "> Bealtaine 30  Ciorcal comhrá i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 30  Pop-up Gaeltacht i McGinn’s "> Bealtaine 30  Pop-up Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 31  Ciorcal comhrá sa Clybaun Hotel "> Bealtaine 31  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Bealtaine 31  Snámh & Caife ag Blackrock "> Bealtaine 31  Snámh & Caife ag Blackrock  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 1  Siúlóid dúlra ó Ionad Sliabh Eachtaí, Baile Locha Riach "> Meitheamh 1  Siúlóid dúlra ó Ionad Sliabh Eachtaí, Baile Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 2–20 Ar an Imeall – Taispeántas Lásadóirí na Coiribe in Áras Éanna, Inis Oírr"> Meitheamh 2–20 Ar an Imeall – Taispeántas Lásadóirí na Coiribe in Áras Éanna, Inis Oírr </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 2  Féasta Sráide sa Coach House, Maigh Cuilinn "> Meitheamh 2  Féasta Sráide sa Coach House, Maigh Cuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 3  Lá na gClub i bPáirc na Forbacha "> Meitheamh 3  Lá na gClub i bPáirc na Forbacha  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 3  Caife agus Comhrá i bPlámás "> Meitheamh 3  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 4  Ciorcal comhrá Cabairí na gCártaí i Tonery’s "> Meitheamh 4  Ciorcal comhrá Cabairí na gCártaí i Tonery’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 4  Oíche shean-nóis 20 Bliain faoi Bhláth san Amharclann Mick Lally, Druid Lane "> Meitheamh 4  Oíche shean-nóis 20 Bliain faoi Bhláth san Amharclann Mick Lally, Druid Lane  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 5  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meitheamh 5  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 5  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meitheamh 5  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 5  Club leabhar in Oifig Ghaeilge Locha Riach  (Ag Dul i bhFad le Alan Titley)"> Meitheamh 5  Club leabhar in Oifig Ghaeilge Locha Riach  (Ag Dul i bhFad le Alan Titley) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 5  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Meitheamh 5  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 6  Ciorcal comhrá i Leabharlann Órán Mór "> Meitheamh 6  Ciorcal comhrá i Leabharlann Órán Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 7  Ciorcal comhrá sa Clybaun Hotel "> Meitheamh 7  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 7  Maidin Chaifé sa gCruiscín Lán, An Spidéal "> Meitheamh 7  Maidin Chaifé sa gCruiscín Lán, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 10 ) Caife agus Comhrá i bPlámás "> Meitheamh 10 ) Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 11  Ciorcal comhrá sa PorterShed, Sráid an Mhargaidh "> Meitheamh 11  Ciorcal comhrá sa PorterShed, Sráid an Mhargaidh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 11  Ciorcal comhrá Cabairí na gCártaí i gCrowe’s "> Meitheamh 11  Ciorcal comhrá Cabairí na gCártaí i gCrowe’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 11  Club leabhar d’fhoghlaimeoirí Gaeilge i Súil Eile Spás "> Meitheamh 11  Club leabhar d’fhoghlaimeoirí Gaeilge i Súil Eile Spás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 12  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meitheamh 12  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 12  Ciorcal comhrá in Áras na nGael "> Meitheamh 12  Ciorcal comhrá in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 12  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meitheamh 12  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 13  Maidin Chaife sa Leabharlann "> Meitheamh 13  Maidin Chaife sa Leabharlann  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 14  Ciorcal comhrá sa Clybaun Hotel "> Meitheamh 14  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 14  Ceardlann Smididh sa Taibhdhearc "> Meitheamh 14  Ceardlann Smididh sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 17  Caife agus Comhrá i bPlámás "> Meitheamh 17  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 18  Ciorcal comhrá Cabairí na gCártaí i Harry’s "> Meitheamh 18  Ciorcal comhrá Cabairí na gCártaí i Harry’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 19  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meitheamh 19  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 19  Ciorcal comhrá in Áras na nGael "> Meitheamh 19  Ciorcal comhrá in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 19  Club leabhar i Charlie Byrne’s  (Strainséirí le Colmán Ó Raghallaigh)"> Meitheamh 19  Club leabhar i Charlie Byrne’s  (Strainséirí le Colmán Ó Raghallaigh) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 19  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meitheamh 19  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 19  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Meitheamh 19  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 21  Ciorcal comhrá sa Clybaun Hotel "> Meitheamh 21  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 23  Siúlóid i Mionlach, ó Tigh Mhaidhc Pháidín "> Meitheamh 23  Siúlóid i Mionlach, ó Tigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 24  Caife agus Comhrá i bPlámás "> Meitheamh 24  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 26  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meitheamh 26  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 26  Ciorcal comhrá in Áras na nGael "> Meitheamh 26  Ciorcal comhrá in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 26  Caife, cácaí, spraoi ag An Teachín, Inis Oírr "> Meitheamh 26  Caife, cácaí, spraoi ag An Teachín, Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 26  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meitheamh 26  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 26  Ciorcal comhrá d’fhoghlaimeoirí i Tigh Mhaidhc Pháidín "> Meitheamh 26  Ciorcal comhrá d’fhoghlaimeoirí i Tigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 26  Cruinniú Cinn Bhliana Gaeilge ABC in Áras Mhic Amhlaigh "> Meitheamh 26  Cruinniú Cinn Bhliana Gaeilge ABC in Áras Mhic Amhlaigh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 26  Club leabhar in Oifig Ghaeilge Locha Riach  (Imram agus Scéalta Eile le Róise Ní Bhaoill)"> Meitheamh 26  Club leabhar in Oifig Ghaeilge Locha Riach  (Imram agus Scéalta Eile le Róise Ní Bhaoill) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 27–30 Tionól Gaeltachta Conradh na Gaeilge i gConamara Láir"> Meitheamh 27–30 Tionól Gaeltachta Conradh na Gaeilge i gConamara Láir </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 27  Ciorcal comhrá i Súil Eile Space "> Meitheamh 27  Ciorcal comhrá i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 27  Maidin Chaife sa Leabharlann "> Meitheamh 27  Maidin Chaife sa Leabharlann  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 27  PopUp Gaeltacht i McGinn’s "> Meitheamh 27  PopUp Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 27  Ceardlann scríbhneoireachta in Áras Mhic Amhlaigh "> Meitheamh 27  Ceardlann scríbhneoireachta in Áras Mhic Amhlaigh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 27  Ióga i Súil Eile Space "> Meitheamh 27  Ióga i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meitheamh 28  Ciorcal comhrá sa Clybaun Hotel "> Meitheamh 28  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 1  Caife agus Comhrá i bPlámás "> Iúil 1  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 2  Ciorcal comhrá Cabairí na gCártaí i gCrowe’s "> Iúil 2  Ciorcal comhrá Cabairí na gCártaí i gCrowe’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 3  Ciorcal comhrá ceolmhar in Áras na nGael "> Iúil 3  Ciorcal comhrá ceolmhar in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 3  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Iúil 3  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 3  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Iúil 3  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 4  Ióga i Súil Eile Space "> Iúil 4  Ióga i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 5  Ciorcal comhrá sa Clybaun Hotel "> Iúil 5  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 5  Seó grinn For the Love of Milseáin in Áras Éanna, Inis Oírr "> Iúil 5  Seó grinn For the Love of Milseáin in Áras Éanna, Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 8 Caife agus Comhrá i bPlámás "> Iúil 8 Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 9  Ciorcal comhrá sa PorterShed, Sráid an Mhargaidh "> Iúil 9  Ciorcal comhrá sa PorterShed, Sráid an Mhargaidh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 9  Scannán Kneecap sa Town Hall Theatre "> Iúil 9  Scannán Kneecap sa Town Hall Theatre  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 9  Ciorcal comhrá Cabairí na gCártaí i Sheridan’s, Cnoc na Cathrach "> Iúil 9  Ciorcal comhrá Cabairí na gCártaí i Sheridan’s, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 9  Clubleabhar d’fhoghlaimeoirí i Súil Eile Spás "> Iúil 9  Clubleabhar d’fhoghlaimeoirí i Súil Eile Spás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 10  Gearrscannáin sa Town Hall Theatre "> Iúil 10  Gearrscannáin sa Town Hall Theatre  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 10  Scannán Fidil Ghorm sa Town Hall Theatre "> Iúil 10  Scannán Fidil Ghorm sa Town Hall Theatre  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 10  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Iúil 10  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 10  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín "> Iúil 10  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 10  Scannán Froggie sa Town Hall Theatre "> Iúil 10  Scannán Froggie sa Town Hall Theatre  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 11  Maidin Chaife sa Leabharlann "> Iúil 11  Maidin Chaife sa Leabharlann  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 11  Ióga i Súil Eile Space "> Iúil 11  Ióga i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 12  Ciorcal comhrá sa Clybaun Hotel "> Iúil 12  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 13  Scannán Iarsmaí i bPálás "> Iúil 13  Scannán Iarsmaí i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 13  Scannán Kneecap i bPálás "> Iúil 13  Scannán Kneecap i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 15  Caife agus Comhrá i bPlámás "> Iúil 15  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 15  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Iúil 15  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 16  Ciorcal comhrá Cabairí na gCártaí san Oslo, Bóthar na Trá "> Iúil 16  Ciorcal comhrá Cabairí na gCártaí san Oslo, Bóthar na Trá  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 16  Dráma Ar an Dé Deiridh in Áras Éanna, Inis Oírr "> Iúil 16  Dráma Ar an Dé Deiridh in Áras Éanna, Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 17  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Iúil 17  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 17  Ciorcal comhrá ceolmhar in Áras na nGael "> Iúil 17  Ciorcal comhrá ceolmhar in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 17  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Iúil 17  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 17  Clubleabhar i Charlie Byrne’s  (Is Gearr… le Marion Keyes agus Póg Mo Thóin le Pádraic Breathnach)"> Iúil 17  Clubleabhar i Charlie Byrne’s  (Is Gearr… le Marion Keyes agus Póg Mo Thóin le Pádraic Breathnach) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 17  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Iúil 17  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 18  Ióga i Súil Eile Space "> Iúil 18  Ióga i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 18  Kneecap sa Phuball Mór"> Iúil 18  Kneecap sa Phuball Mór </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 18  Dráma Ar an Dé Deiridh i Seanscoil Sailearna, Indreabhán "> Iúil 18  Dráma Ar an Dé Deiridh i Seanscoil Sailearna, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 19  Ciorcal comhrá sa Clybaun Hotel "> Iúil 19  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 22  Caife agus Comhrá i bPlámás "> Iúil 22  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 22  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Iúil 22  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 23  Ciorcal Cúlchainte ar an gCampas sa Bhialann, Ollscoil na Gaillimhe "> Iúil 23  Ciorcal Cúlchainte ar an gCampas sa Bhialann, Ollscoil na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 23  Ciorcal comhrá Cabairí na gCártaí san Office, Bóthar na Trá "> Iúil 23  Ciorcal comhrá Cabairí na gCártaí san Office, Bóthar na Trá  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 24  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Iúil 24  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 24  Ciorcal comhrá ceolmhar in Áras na nGael "> Iúil 24  Ciorcal comhrá ceolmhar in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 24  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Iúil 24  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 24  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín "> Iúil 24  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 24  Dráma Ar an Dé Deiridh in Áras Pobail, Corr na Móna "> Iúil 24  Dráma Ar an Dé Deiridh in Áras Pobail, Corr na Móna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 25–27 Dráma An Fear Liath cois Cladaigh "> Iúil 25–27 Dráma An Fear Liath cois Cladaigh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 25  Ciorcal comhrá i Súil Eile Space "> Iúil 25  Ciorcal comhrá i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 25  Ióga i Súil Eile Space "> Iúil 25  Ióga i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 26  Ciorcal comhrá sa Clybaun Hotel "> Iúil 26  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 27  Féile na mBád ar Inis Meáin"> Iúil 27  Féile na mBád ar Inis Meáin </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 29  Caife agus Comhrá i bPlámás "> Iúil 29  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 29  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Iúil 29  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 30  Ciorcal cúlchainte ar an gCampas sa Bhialann, Ollscoil na Gaillimhe "> Iúil 30  Ciorcal cúlchainte ar an gCampas sa Bhialann, Ollscoil na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 30  Ciorcal comhrá Cabairí na gCártaí in O’Reilly’s, Bóthar na Tŕa "> Iúil 30  Ciorcal comhrá Cabairí na gCártaí in O’Reilly’s, Bóthar na Tŕa  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 31  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Iúil 31  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 31  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Iúil 31  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Iúil 31  Oíche Áirneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch "> Iúil 31  Oíche Áirneáin an Bhruaigh Thoir i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 1  Ciorcal comhrá i Solas FRC, Áth Cinn "> Lúnasa 1  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 2–5 Rásaí Inis Meáin"> Lúnasa 2–5 Rásaí Inis Meáin </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 2  Ciorcal comhrá sa Clybaun Hotel "> Lúnasa 2  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 6  Ciorcal comhrá Cabairí na gCártaí i gCadell (san áit a raibh Caribou) "> Lúnasa 6  Ciorcal comhrá Cabairí na gCártaí i gCadell (san áit a raibh Caribou)  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 7  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Lúnasa 7  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 8–11 Scannán Kneecap i bPálás"> Lúnasa 8–11 Scannán Kneecap i bPálás </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 8  Ciorcal comhrá i Solas FRC, Áth Cinn "> Lúnasa 8  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 9  Ciorcal comhrá sa Clybaun Hotel "> Lúnasa 9  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 10–11 Rásaí Inis Oírr"> Lúnasa 10–11 Rásaí Inis Oírr </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 12  Caife agus Comhrá i bPlámás "> Lúnasa 12  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 12  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Lúnasa 12  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 13–15 Ainm Cleite – Féile na bhFilí agus na Scríbhneoirí i gCeantar na nOileán"> Lúnasa 13–15 Ainm Cleite – Féile na bhFilí agus na Scríbhneoirí i gCeantar na nOileán </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 13  Ceardlann Mhanglaim Bhróid sa Taibhdhearc "> Lúnasa 13  Ceardlann Mhanglaim Bhróid sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 13  Ciorcal comhrá Cabairí na gCártaí i TJ Clarke’s (nó an Dew Drop Inn má tá an áit sin lán) "> Lúnasa 13  Ciorcal comhrá Cabairí na gCártaí i TJ Clarke’s (nó an Dew Drop Inn má tá an áit sin lán)  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 14  Aifreann agus turas ar atharla Chinnedheirgeach ar Inis Oírr "> Lúnasa 14  Aifreann agus turas ar atharla Chinnedheirgeach ar Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 14  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Lúnasa 14  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 15  Ciorcal comhrá i Solas FRC, Áth Cinn "> Lúnasa 15  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 16  Ciorcal comhrá sa Clybaun Hotel "> Lúnasa 16  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 19  BithBliotsa agus Glantacháin Dúlra ar an dTrá Mhór, Indreabhán "> Lúnasa 19  BithBliotsa agus Glantacháin Dúlra ar an dTrá Mhór, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 19  Guthanna Stair Chonamara san Ionad Oidhreachta Leitir Mealláin & Gharumna "> Lúnasa 19  Guthanna Stair Chonamara san Ionad Oidhreachta Leitir Mealláin & Gharumna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 19  Caife agus Comhrá i bPlámás "> Lúnasa 19  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 19  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Lúnasa 19  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 20  Ciorcal comhrá Cabairí na gCártaí sa Cellar Bar "> Lúnasa 20  Ciorcal comhrá Cabairí na gCártaí sa Cellar Bar  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 20  Clubleabhar do thosaitheoirí i Súil Eile Spás, Bearna  (ag plé Aithníonn an fhuil a chéile le Roddy Doyle)"> Lúnasa 20  Clubleabhar do thosaitheoirí i Súil Eile Spás, Bearna  (ag plé Aithníonn an fhuil a chéile le Roddy Doyle) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 21  Cuisle an Chomhshaoil – Siúlóid dúlra & ceol, ceardlanna ealaíne (do pháistí idir 15-25), ceolchoirm i Seanscoil Sailearna"> Lúnasa 21  Cuisle an Chomhshaoil – Siúlóid dúlra & ceol, ceardlanna ealaíne (do pháistí idir 15-25), ceolchoirm i Seanscoil Sailearna </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 21  Clubleabhar i Charlie Byrne’s  (ag plé Póg mo Thóin le Padraic Breathnach agus Aithníonn an fhuil a chéile le Roddy Doyle)"> Lúnasa 21  Clubleabhar i Charlie Byrne’s  (ag plé Póg mo Thóin le Padraic Breathnach agus Aithníonn an fhuil a chéile le Roddy Doyle) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 21  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Lúnasa 21  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 22–31 Taispeántas Toibreacha Beannaithe Árann in Áras Éanna, Inis Oírr "> Lúnasa 22–31 Taispeántas Toibreacha Beannaithe Árann in Áras Éanna, Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 22  Ciorcal comhrá i Solas FRC, Áth Cinn "> Lúnasa 22  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 22  Féile na bhFilí in Ionad Cultúrtha an Phiarsaigh, Conamara "> Lúnasa 22  Féile na bhFilí in Ionad Cultúrtha an Phiarsaigh, Conamara  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 23  Ciorcal comhrá sa Clybaun Hotel "> Lúnasa 23  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 24  Féile na mBád ar Inis Mór, Árainn"> Lúnasa 24  Féile na mBád ar Inis Mór, Árainn </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 24–25 Féile na bhFlaitheartach ar Inis Mór, Árainn"> Lúnasa 24–25 Féile na bhFlaitheartach ar Inis Mór, Árainn </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 26  Caife agus Comhrá i bPlámás "> Lúnasa 26  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 26  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Lúnasa 26  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 27  Ciorcal comhrá Cabairí na gCártaí i gCooke’s "> Lúnasa 27  Ciorcal comhrá Cabairí na gCártaí i gCooke’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 28  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Lúnasa 28  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 28  Clubleabhar CLEAS in Oifig Ghaeilge Locha Riach  (Imram agus scéalta eile le Róise Ní Bhaoill)"> Lúnasa 28  Clubleabhar CLEAS in Oifig Ghaeilge Locha Riach  (Imram agus scéalta eile le Róise Ní Bhaoill) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 28  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Lúnasa 28  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 29  Ciorcal comhrá i Solas FRC, Áth Cinn "> Lúnasa 29  Ciorcal comhrá i Solas FRC, Áth Cinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Lúnasa 30  Ciorcal comhrá sa Clybaun Hotel "> Lúnasa 30  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Scannán Kneecap i bPálás"> Scannán Kneecap i bPálás </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Scannán Kneecap san Omniplex, Bóthar na Trá"> Scannán Kneecap san Omniplex, Bóthar na Trá </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Scannán Kneecap san Eye Cinema"> Scannán Kneecap san Eye Cinema </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Scannán Kneecap san IMC, Bóthar Áth Cinn"> Scannán Kneecap san IMC, Bóthar Áth Cinn </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 2  Caife agus Comhrá i bPlámás "> Meán Fómhair 2  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 2  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Meán Fómhair 2  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 3  Ciorcal comhrá Cabairí na gCártaí sa Hole in the Wall "> Meán Fómhair 3  Ciorcal comhrá Cabairí na gCártaí sa Hole in the Wall  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 4  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meán Fómhair 4  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 4  Ciorcal comhrá in Inis Fáil, An Spidéal "> Meán Fómhair 4  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 4  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Meán Fómhair 4  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 4  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meán Fómhair 4  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 5  Tráth na gCeist i dTigh Terry, Ros an Mhíl "> Meán Fómhair 5  Tráth na gCeist i dTigh Terry, Ros an Mhíl  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 6  Ciorcal comhrá sa Clybaun Hotel "> Meán Fómhair 6  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 6  Maidin Chaife san Crúiscín Lán, An Spidéal "> Meán Fómhair 6  Maidin Chaife san Crúiscín Lán, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 6–8 Tionól Lámhchleasaíochta ar Inis Oírr"> Meán Fómhair 6–8 Tionól Lámhchleasaíochta ar Inis Oírr </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 8  Siúlóid 5k ar mhaithe le Páirc an Chanal "> Meán Fómhair 8  Siúlóid 5k ar mhaithe le Páirc an Chanal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 9  Caife agus Comhrá i bPlámás "> Meán Fómhair 9  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 9  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Meán Fómhair 9  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 10  Ciorcal comhrá sa bPorterShed "> Meán Fómhair 10  Ciorcal comhrá sa bPorterShed  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 10  Ciorcal comhrá in Ionad Cuimhneacháin na nImirceach, Carna "> Meán Fómhair 10  Ciorcal comhrá in Ionad Cuimhneacháin na nImirceach, Carna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 10  Ciorcal comhrá Cabairí na gCártaí sa Dew Drop Inn "> Meán Fómhair 10  Ciorcal comhrá Cabairí na gCártaí sa Dew Drop Inn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 11  Ócáid Oidhreachta agus Cultúir in Ionad na nImearcach, Carna "> Meán Fómhair 11  Ócáid Oidhreachta agus Cultúir in Ionad na nImearcach, Carna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 11  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meán Fómhair 11  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 11  PopUp Gaeltacht sa Dew Drop Inn "> Meán Fómhair 11  PopUp Gaeltacht sa Dew Drop Inn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 11  Ciorcal comhrá in Inis Fáil, An Spidéal "> Meán Fómhair 11  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 11  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meán Fómhair 11  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 11  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Meán Fómhair 11  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 11  Club leabhar Chois Fharraige i dTigh Mholly  (Amhráin Amhairgin, An Chailleach Bhéarra, Amhra Choilm Chille le Máire Mhac an tSaoi)"> Meán Fómhair 11  Club leabhar Chois Fharraige i dTigh Mholly  (Amhráin Amhairgin, An Chailleach Bhéarra, Amhra Choilm Chille le Máire Mhac an tSaoi) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 12  Ciorcal comhrá i Leabharlann Chathair na Gaillimhe "> Meán Fómhair 12  Ciorcal comhrá i Leabharlann Chathair na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 12  Ciorcal comhrá i Leabharlann Órán Mór "> Meán Fómhair 12  Ciorcal comhrá i Leabharlann Órán Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 13  Ciorcal comhrá sa Clybaun Hotel "> Meán Fómhair 13  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 13  Siúlóid Coill Chill Ráine (in aice le Teaghlach Uilinn) "> Meán Fómhair 13  Siúlóid Coill Chill Ráine (in aice le Teaghlach Uilinn)  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 13–15 Éigse Dara Beag ar Inis Meáin"> Meán Fómhair 13–15 Éigse Dara Beag ar Inis Meáin </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 13–15 Féile na bhFilí agus na Scríbhneoirí Ainm Cleite"> Meán Fómhair 13–15 Féile na bhFilí agus na Scríbhneoirí Ainm Cleite </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 14  Turas Inir Oírr an Bhruaigh Thoir"> Meán Fómhair 14  Turas Inir Oírr an Bhruaigh Thoir </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 15  Siúlóid Dúlra ag fágáil ó Cár-clós Séipéal Leitir Móir "> Meán Fómhair 15  Siúlóid Dúlra ag fágáil ó Cár-clós Séipéal Leitir Móir  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 16  Caife agus Comhrá i bPlámás "> Meán Fómhair 16  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 16  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Meán Fómhair 16  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 17  Ciorcal comhrá in Ionad Cuimhneacháin na nImirceach, Carna "> Meán Fómhair 17  Ciorcal comhrá in Ionad Cuimhneacháin na nImirceach, Carna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 17  Ciorcal comhrá Cabairí na gCártaí "> Meán Fómhair 17  Ciorcal comhrá Cabairí na gCártaí  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 18  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meán Fómhair 18  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 18  Ciorcal comhrá in Inis Fáil, An Spidéal "> Meán Fómhair 18  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 18  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meán Fómhair 18  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 18  Clubleabhar i Charlie Byrne’s  (Deoraíocht le Pádraic Ó Conaire & Is gearr… le Marion Keyes)"> Meán Fómhair 18  Clubleabhar i Charlie Byrne’s  (Deoraíocht le Pádraic Ó Conaire & Is gearr… le Marion Keyes) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 18  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Meán Fómhair 18  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 18–19 Comhdháil Oileáin na hEíreann ar Inis Oírr"> Meán Fómhair 18–19 Comhdháil Oileáin na hEíreann ar Inis Oírr </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 19  Ciorcal comhrá i Leabharlann Órán Mór "> Meán Fómhair 19  Ciorcal comhrá i Leabharlann Órán Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 19  Ceardlann filíochta in Oifig Ghaeilge Locha Riach "> Meán Fómhair 19  Ceardlann filíochta in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20  Ciorcal comhrá sa Clybaun Hotel "> Meán Fómhair 20  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20  Ócáid Dá mBeadh Mileoidean Agamsa i Seanscoil Sailearna"> Meán Fómhair 20  Ócáid Dá mBeadh Mileoidean Agamsa i Seanscoil Sailearna </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20  Ó Phinn Fadó san Óstan Ardilaun "> Meán Fómhair 20  Ó Phinn Fadó san Óstan Ardilaun  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20  Ceiliúradh ar Mhicheál Mac Suibhne san Amharclann Theach an Stáisiúin, An Clochán "> Meán Fómhair 20  Ceiliúradh ar Mhicheál Mac Suibhne san Amharclann Theach an Stáisiúin, An Clochán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20  Ceardlann Ealaíona san Ionad Pobail Bhaile an Doirín "> Meán Fómhair 20  Ceardlann Ealaíona san Ionad Pobail Bhaile an Doirín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20  Oíche Chultúir i nGaeltacht Oirthear Chathair na Gaillimhe i dTigh Mhaidhc Pháidín, Mionloch"> Meán Fómhair 20  Oíche Chultúir i nGaeltacht Oirthear Chathair na Gaillimhe i dTigh Mhaidhc Pháidín, Mionloch </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20  Oíche Chultúir ag an Coach House, Maigh Cuilinn "> Meán Fómhair 20  Oíche Chultúir ag an Coach House, Maigh Cuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 20–21 Classic Gailf CLG an Spidéil i gClub Gailf Bhearna"> Meán Fómhair 20–21 Classic Gailf CLG an Spidéil i gClub Gailf Bhearna </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 23  Caife agus Comhrá i bPlámás "> Meán Fómhair 23  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 23  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Meán Fómhair 23  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 24  Ciorcal comhrá in Ionad Cuimhneacháin na nImirceach, Carna "> Meán Fómhair 24  Ciorcal comhrá in Ionad Cuimhneacháin na nImirceach, Carna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 24  Ciorcal comhrá Cabairí na gCártaí "> Meán Fómhair 24  Ciorcal comhrá Cabairí na gCártaí  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 25  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Meán Fómhair 25  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 25  Ciorcal comhrá in Inis Fáil, An Spidéal "> Meán Fómhair 25  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 25  Ciorcal comhrá Aon Scéal sa Harbour Hotel "> Meán Fómhair 25  Ciorcal comhrá Aon Scéal sa Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 25  Clubleabhar CLEAS in Áras na nGael  (Saighdiúir le Cathal Ó Searcaigh)"> Meán Fómhair 25  Clubleabhar CLEAS in Áras na nGael  (Saighdiúir le Cathal Ó Searcaigh) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 25  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Meán Fómhair 25  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 26–27 Scoil an Phiarsaigh in Ionad Cultúrtha an Phiarsaigh"> Meán Fómhair 26–27 Scoil an Phiarsaigh in Ionad Cultúrtha an Phiarsaigh </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 26  Ciorcal comhrá i Súil Eile Space, Bearna "> Meán Fómhair 26  Ciorcal comhrá i Súil Eile Space, Bearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 26  PopUp Gaeltacht i McGinn’s "> Meán Fómhair 26  PopUp Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 26  Ciorcal comhrá i Leabharlann Órán Mór "> Meán Fómhair 26  Ciorcal comhrá i Leabharlann Órán Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 27  Ciorcal comhrá sa Clybaun Hotel "> Meán Fómhair 27  Ciorcal comhrá sa Clybaun Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 27  Ceardlann Suaimhneas Intinne in Ionad Cultúrtha An Phiarsaigh "> Meán Fómhair 27  Ceardlann Suaimhneas Intinne in Ionad Cultúrtha An Phiarsaigh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 27–28 Ómós Áite – Comhdháil ar Litríocht agus Chultúr na Gaeilge in Ollscoil na Gaillimhe"> Meán Fómhair 27–28 Ómós Áite – Comhdháil ar Litríocht agus Chultúr na Gaeilge in Ollscoil na Gaillimhe </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 28  Féile na bPuiteachaí ar Inis Meáin"> Meán Fómhair 28  Féile na bPuiteachaí ar Inis Meáin </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 30  Caife agus Comhrá i bPlámás "> Meán Fómhair 30  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Meán Fómhair 30  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill "> Meán Fómhair 30  Ciorcal comhrá do thosaitheoirí san Ionad Pobail, Baile an Phoill  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair"> Deireadh Fómhair </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 1  Ciorcal comhrá Cabairí na gCártaí i Java’s "> Deireadh Fómhair 1  Ciorcal comhrá Cabairí na gCártaí i Java’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 2–6 Féile Chois Fharraige"> Deireadh Fómhair 2–6 Féile Chois Fharraige </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 2  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Deireadh Fómhair 2  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 2  Ciorcal comhrá in Inis Fáil, An Spidéal "> Deireadh Fómhair 2  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 2  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Deireadh Fómhair 2  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 2  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Deireadh Fómhair 2  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 3  Ciorcal comhrá san Óstán Clybaun "> Deireadh Fómhair 3  Ciorcal comhrá san Óstán Clybaun  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 3  Scannán Kneecap i gClub Scannán Sailearna "> Deireadh Fómhair 3  Scannán Kneecap i gClub Scannán Sailearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 4–6 Cúirt Cheoil na mBan ar Inis Oírr agus Inis Meáin"> Deireadh Fómhair 4–6 Cúirt Cheoil na mBan ar Inis Oírr agus Inis Meáin </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 4–20 Féile Raifteirí le Gaeilge Locha Riach"> Deireadh Fómhair 4–20 Féile Raifteirí le Gaeilge Locha Riach </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 4–9 Féile Cartún na Gaillimhe – Taispeántais in Áras Éanna, Inis Oírr"> Deireadh Fómhair 4–9 Féile Cartún na Gaillimhe – Taispeántais in Áras Éanna, Inis Oírr </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 4–9 Féile Cartún na Gaillimhe – Taispeántas sa Taibhdhearc"> Deireadh Fómhair 4–9 Féile Cartún na Gaillimhe – Taispeántas sa Taibhdhearc </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 6  Seisiún Líníocht le cartúnaí profisiúnta, le bróinse agus ceol ón Gypsy Jazz Band sa Taibhdhearc "> Deireadh Fómhair 6  Seisiún Líníocht le cartúnaí profisiúnta, le bróinse agus ceol ón Gypsy Jazz Band sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 7  Caife agus Comhrá i bPlámás "> Deireadh Fómhair 7  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 8  Ciorcal comhrá i bPorterShed2 "> Deireadh Fómhair 8  Ciorcal comhrá i bPorterShed2  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 8  Ciorcal comhrá Cabairí na gCártaí i Java’s "> Deireadh Fómhair 8  Ciorcal comhrá Cabairí na gCártaí i Java’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 9  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Deireadh Fómhair 9  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 9  Ciorcal comhrá in Inis Fáil, An Spidéal "> Deireadh Fómhair 9  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 9  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Deireadh Fómhair 9  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 9  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín "> Deireadh Fómhair 9  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 10  Maidin Chaife i Leabharlann Chathair na Gaillimhe "> Deireadh Fómhair 10  Maidin Chaife i Leabharlann Chathair na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 11  Ciorcal comhrá san Óstán Clybaun "> Deireadh Fómhair 11  Ciorcal comhrá san Óstán Clybaun  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 11–12 Taighde Dána: Ceol leictreonach, tobchumadóireacht agus na hEalaíona Dúchais i Seanscoil Sailearna agus Tigh Mholly"> Deireadh Fómhair 11–12 Taighde Dána: Ceol leictreonach, tobchumadóireacht agus na hEalaíona Dúchais i Seanscoil Sailearna agus Tigh Mholly </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 13  Ceolchoirm Fhéile Chois Fharraige i Seanscoil Sailearna, Indreabhán "> Deireadh Fómhair 13  Ceolchoirm Fhéile Chois Fharraige i Seanscoil Sailearna, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 14  Caife agus Comhrá i bPlámás "> Deireadh Fómhair 14  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 15  Ciorcal comhrá Cabairí na gCártaí san Eyre Square Hotel "> Deireadh Fómhair 15  Ciorcal comhrá Cabairí na gCártaí san Eyre Square Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 16  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Deireadh Fómhair 16  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 16  Clubleabhar i Charlie Byrne’s  (ag plé Gearrscéalta Pádraig MacPiarais)"> Deireadh Fómhair 16  Clubleabhar i Charlie Byrne’s  (ag plé Gearrscéalta Pádraig MacPiarais) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 16  Ciorcal comhrá in Inis Fáil, An Spidéal "> Deireadh Fómhair 16  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 16  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Deireadh Fómhair 16  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 16  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Deireadh Fómhair 16  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 16  Clár trítheangach le cóir Meibion Ardudwy ar mhaithe le hOspís na Gaillimhe i Séipéal Bhearna "> Deireadh Fómhair 16  Clár trítheangach le cóir Meibion Ardudwy ar mhaithe le hOspís na Gaillimhe i Séipéal Bhearna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 17  Ciorcal comhrá i Leabharlann Órán Mór "> Deireadh Fómhair 17  Ciorcal comhrá i Leabharlann Órán Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 17  Clár trítheangach le cóir Meibion Ardudwy ar mhaithe le hOspís na Gaillimhe i Séipéal San Aibhistín "> Deireadh Fómhair 17  Clár trítheangach le cóir Meibion Ardudwy ar mhaithe le hOspís na Gaillimhe i Séipéal San Aibhistín  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 17  Turas réalteolaíochta agus oíche airneáin i dTigh Mhaidhc Pháidín, Mionloch "> Deireadh Fómhair 17  Turas réalteolaíochta agus oíche airneáin i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 18  Maidin caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Deireadh Fómhair 18  Maidin caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 18  Ciorcal comhrá san Óstán Clybaun "> Deireadh Fómhair 18  Ciorcal comhrá san Óstán Clybaun  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 18–20 Féile Siúlóid Charna"> Deireadh Fómhair 18–20 Féile Siúlóid Charna </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 19  Fiach Focal in Acadamh na hOllscolaíochta Gaeilge, Ceathrú Rua "> Deireadh Fómhair 19  Fiach Focal in Acadamh na hOllscolaíochta Gaeilge, Ceathrú Rua  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 19  Oíche Chomhluadar in Áras na hOllscoile, Roisín na Maithníoch "> Deireadh Fómhair 19  Oíche Chomhluadar in Áras na hOllscoile, Roisín na Maithníoch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 20  Lá na n-oileáin don Phailistín ar Inis Oírr "> Deireadh Fómhair 20  Lá na n-oileáin don Phailistín ar Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 21  Caife agus Comhrá i bPlámás "> Deireadh Fómhair 21  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 22  Ciorcal comhrá Cabairí na gCártaí i Murphy’s "> Deireadh Fómhair 22  Ciorcal comhrá Cabairí na gCártaí i Murphy’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 22  Gáire as Gaeilge Cois Cuain, An Spidéal "> Deireadh Fómhair 22  Gáire as Gaeilge Cois Cuain, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 23  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Deireadh Fómhair 23  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 23  Ciorcal comhrá in Inis Fáil, An Spidéal "> Deireadh Fómhair 23  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 23  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Deireadh Fómhair 23  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 23  Oíche Shóisialta i dTeach na Gaeilge, Maigh Cuilinn "> Deireadh Fómhair 23  Oíche Shóisialta i dTeach na Gaeilge, Maigh Cuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 23  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín, Mionloch "> Deireadh Fómhair 23  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 23  Gáire as Gaeilge sa Crane "> Deireadh Fómhair 23  Gáire as Gaeilge sa Crane  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 24  Tae na Samhna Inis Meáin in Halla Naomh Eoin, Inis Meáin "> Deireadh Fómhair 24  Tae na Samhna Inis Meáin in Halla Naomh Eoin, Inis Meáin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 24  Taifeadadh don chéiliúradh cinn bhliana ar TG4 i dTigh Chualáin ar an gCoill Rua "> Deireadh Fómhair 24  Taifeadadh don chéiliúradh cinn bhliana ar TG4 i dTigh Chualáin ar an gCoill Rua  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 24  PopUp Gaeltacht i McGinn’s "> Deireadh Fómhair 24  PopUp Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 24  Bundúchasach – Ypykuéra – ócáid le clabhsúr a chur ar an Tionscadal Ealaíne Naif i gCafé Laura Rossa, Bóthar na Trá "> Deireadh Fómhair 24  Bundúchasach – Ypykuéra – ócáid le clabhsúr a chur ar an Tionscadal Ealaíne Naif i gCafé Laura Rossa, Bóthar na Trá  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 24  Gáire as Gaeilge sa Crane "> Deireadh Fómhair 24  Gáire as Gaeilge sa Crane  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 24  Caibaré Gaelach i dTigh Mheaic, Carna "> Deireadh Fómhair 24  Caibaré Gaelach i dTigh Mheaic, Carna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 25  Maidin caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Deireadh Fómhair 25  Maidin caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 25  Ciorcal comhrá san Óstán Clybaun "> Deireadh Fómhair 25  Ciorcal comhrá san Óstán Clybaun  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 25  Ocáid le ceiliúradh a dhéanamh ar an tionscadal Taifead ar na cainteoirí dúchasacha in Óstán Pháirc Mhionlaigh "> Deireadh Fómhair 25  Ocáid le ceiliúradh a dhéanamh ar an tionscadal Taifead ar na cainteoirí dúchasacha in Óstán Pháirc Mhionlaigh  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 25–27 Éigse chomóradh Mhichael Mháire Ghabha i gCarna"> Deireadh Fómhair 25–27 Éigse chomóradh Mhichael Mháire Ghabha i gCarna </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 26  Ciorcal comhrá i Súil Eile Space "> Deireadh Fómhair 26  Ciorcal comhrá i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 27  Seisiún ceoil oscailte i Súil Eile Space "> Deireadh Fómhair 27  Seisiún ceoil oscailte i Súil Eile Space  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 28  Turas siúil thart ar Chathair na Gaillimhe ag tosú san Fhaiche Mhór "> Deireadh Fómhair 28  Turas siúil thart ar Chathair na Gaillimhe ag tosú san Fhaiche Mhór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 29  Ciorcal comhrá Cabairí na gCártaí san Imperial Hotel "> Deireadh Fómhair 29  Ciorcal comhrá Cabairí na gCártaí san Imperial Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 29  Club leabhar in Oifig Ghaeilge Locha Riach  (Imram …agus scéalta eile le Róise Ní Bhaoill)"> Deireadh Fómhair 29  Club leabhar in Oifig Ghaeilge Locha Riach  (Imram …agus scéalta eile le Róise Ní Bhaoill) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 30  Ciorcal comhrá in Oifig Ghaeilge Locha Riach "> Deireadh Fómhair 30  Ciorcal comhrá in Oifig Ghaeilge Locha Riach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 30  Ciorcal comhrá in Inis Fáil, An Spidéal "> Deireadh Fómhair 30  Ciorcal comhrá in Inis Fáil, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 30  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Deireadh Fómhair 30  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Deireadh Fómhair 30  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Deireadh Fómhair 30  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 1  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Samhain 1  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 1  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach "> Samhain 1  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 4  Caife agus comhrá i bPlámás "> Samhain 4  Caife agus comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 5  Ciorcal comhrá Cabairí na gCártaí i bPálás "> Samhain 5  Ciorcal comhrá Cabairí na gCártaí i bPálás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 6  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Samhain 6  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 6  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín, Mionlach "> Samhain 6  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín, Mionlach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 7  Ciorcal comhrá i Leabharlann Óran Mór "> Samhain 7  Ciorcal comhrá i Leabharlann Óran Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 7  Tráth na gCeist i dTigh Chualáin, Indreabhán "> Samhain 7  Tráth na gCeist i dTigh Chualáin, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 8  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Samhain 8  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 8  Maidin Chaife sa gCrúiscín Lán, An Spidéal "> Samhain 8  Maidin Chaife sa gCrúiscín Lán, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 8  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach "> Samhain 8  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 8  Siúlóid oíche threoraithe sléibhe i bPáirc Náisiúnta Chonamara ag tosú ag Ionad Cuairteoirí na Páirce Náisiúnta i Leitir Fraic "> Samhain 8  Siúlóid oíche threoraithe sléibhe i bPáirc Náisiúnta Chonamara ag tosú ag Ionad Cuairteoirí na Páirce Náisiúnta i Leitir Fraic  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 10  An Stíl mar a Bhí i Halla Naomh Eoin, Inis Oírr "> Samhain 10  An Stíl mar a Bhí i Halla Naomh Eoin, Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 11–15, 19–22, 25–29 Dráma An Triail sa Taibhdhearc"> Samhain 11–15, 19–22, 25–29 Dráma An Triail sa Taibhdhearc </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 11–15 An tSeachtain Gaelach – imeachtaí in Ollscoil na Gaillimhe"> Samhain 11–15 An tSeachtain Gaelach – imeachtaí in Ollscoil na Gaillimhe </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 11  Maidin Chaife in Áras Shorcha Uí Ghuairim, Carna "> Samhain 11  Maidin Chaife in Áras Shorcha Uí Ghuairim, Carna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 11  Caife agus Comhrá i bPlámás "> Samhain 11  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 12  Ciorcal comhrá sa bPortershed "> Samhain 12  Ciorcal comhrá sa bPortershed  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 12  Ciorcal comhrá Cabairí na gCártaí sa Crane "> Samhain 12  Ciorcal comhrá Cabairí na gCártaí sa Crane  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 13  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Samhain 13  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 13  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionlach "> Samhain 13  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionlach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 13  Tráth na gCeist STEM as Gaeilge i gCarroll’s "> Samhain 13  Tráth na gCeist STEM as Gaeilge i gCarroll’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 13  Club leabhar Cois Fharraige i dTigh Mholly, Indreabhán  (An Mháthair le Grazia Deledda)"> Samhain 13  Club leabhar Cois Fharraige i dTigh Mholly, Indreabhán  (An Mháthair le Grazia Deledda) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 14  Maidin chaife i Leabharlann Cathrach na Gaillimhe "> Samhain 14  Maidin chaife i Leabharlann Cathrach na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 14  Ceardlann ar chanúint Ghaeltacht oirthear Chathair na Gaillimhe in Áras na Gaeilge, Ollscoil na Gaillimhe "> Samhain 14  Ceardlann ar chanúint Ghaeltacht oirthear Chathair na Gaillimhe in Áras na Gaeilge, Ollscoil na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 15  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Samhain 15  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 15  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach "> Samhain 15  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 15  Tráth na gCeist sa Chruiscín Lán, An Spidéal "> Samhain 15  Tráth na gCeist sa Chruiscín Lán, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 15  Tráth na gCeist i dTigh Chualáin, Indreabhán "> Samhain 15  Tráth na gCeist i dTigh Chualáin, Indreabhán  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 16  Dráma Big Maggie in Halla Scoil Chuimsitheach Chiaráin, An Cheathrú Rua "> Samhain 16  Dráma Big Maggie in Halla Scoil Chuimsitheach Chiaráin, An Cheathrú Rua  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 17  Bláth na hÓige sa Taibhdhearc "> Samhain 17  Bláth na hÓige sa Taibhdhearc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 18  Caife agus Comhrá i bPlámás "> Samhain 18  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 19  Ciorcal comhrá Cabairí na gCártaí i gCarroll’s "> Samhain 19  Ciorcal comhrá Cabairí na gCártaí i gCarroll’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 19  Tráth na gCeist i Sheridan’s, Cnoc na Cathrach "> Samhain 19  Tráth na gCeist i Sheridan’s, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 20  Clubleabhar i Charlie Byrne’s  (Óró le Alan Titley)"> Samhain 20  Clubleabhar i Charlie Byrne’s  (Óró le Alan Titley) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 20  Spraoi sa Gheimhreadh – plé na teanga le cainteoirí dúchasacha i dTeach na Gaeilge "> Samhain 20  Spraoi sa Gheimhreadh – plé na teanga le cainteoirí dúchasacha i dTeach na Gaeilge  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 20  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Samhain 20  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 20  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín, Mionlach "> Samhain 20  Oíche Airneáin an Bhruaigh Thiar i dTigh Mhaidhc Pháidín, Mionlach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 21–25 Féile Rua ag An Ceathrú Rua"> Samhain 21–25 Féile Rua ag An Ceathrú Rua </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 21  Ciorcal comhrá i Leabharlann Óran Mór "> Samhain 21  Ciorcal comhrá i Leabharlann Óran Mór  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 22  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Samhain 22  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 22  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach "> Samhain 22  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 22  Oíche Ólaíochta sa Crane "> Samhain 22  Oíche Ólaíochta sa Crane  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 22  Stéibh ’24 ag An Crompán, An Cheathrú Rua "> Samhain 22  Stéibh ’24 ag An Crompán, An Cheathrú Rua  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 25  Caife agus Comhrá i bPlámás "> Samhain 25  Caife agus Comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 26  Ciorcal comhrá Cabairí na gCártaí "> Samhain 26  Ciorcal comhrá Cabairí na gCártaí  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 27  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Samhain 27  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 27  Oíche shóisialta i dTeach na Gaeilge, Mhaigh Cuilinn "> Samhain 27  Oíche shóisialta i dTeach na Gaeilge, Mhaigh Cuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 27  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch "> Samhain 27  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionloch  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 27  Clubleabhar in Oifig Ghaeilge Locha Riach  (Sa Pholl Báite le Anna Heussaff)"> Samhain 27  Clubleabhar in Oifig Ghaeilge Locha Riach  (Sa Pholl Báite le Anna Heussaff) </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 28  Popup Gaeltacht i McGinn’s "> Samhain 28  Popup Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 29  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Samhain 29  Maidin Chaife in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Samhain 29  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach "> Samhain 29  Ciorcal comhrá in Óstán an Chlaí Bán, Cnoc na Cathrach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 2  Ciorcal comhrá i bPlámás "> Nollaig 2  Ciorcal comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 2  Oíche Cheiliúrtha na Scríbhneoirí Eorpacha sa Siopa Leabhar, An Cheardlann, An Spidéal "> Nollaig 2  Oíche Cheiliúrtha na Scríbhneoirí Eorpacha sa Siopa Leabhar, An Cheardlann, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 2  Damhsa seit i gColáiste Chonnacht, An Spidéal "> Nollaig 2  Damhsa seit i gColáiste Chonnacht, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 3  Ciorcal comhrá Cabairí na gCártaí i nGaravan’s "> Nollaig 3  Ciorcal comhrá Cabairí na gCártaí i nGaravan’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 4  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Nollaig 4  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 4  Seoladh Bódléar le Darach Ó Scolaí i dTigh Mholly ar an Lochán Beag "> Nollaig 4  Seoladh Bódléar le Darach Ó Scolaí i dTigh Mholly ar an Lochán Beag  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 5–21 Geamaireacht na Nollag Fionn sa Spás sa Taibhdhearc"> Nollaig 5–21 Geamaireacht na Nollag Fionn sa Spás sa Taibhdhearc </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 6  Teacht le chéile do phobal na Gaeilge san Ollscoil i G010 sa Hardiman Building, Ollscoil na Gaillimhe "> Nollaig 6  Teacht le chéile do phobal na Gaeilge san Ollscoil i G010 sa Hardiman Building, Ollscoil na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 6  Maidin Caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Nollaig 6  Maidin Caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 6  Maidin Chaife sa Chrúiscín Lán, An Spidéal "> Nollaig 6  Maidin Chaife sa Chrúiscín Lán, An Spidéal  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 9  Ciorcal comhrá i bPlámás "> Nollaig 9  Ciorcal comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 9  Bingo in Ionad Pobail Chill Chiaráin "> Nollaig 9  Bingo in Ionad Pobail Chill Chiaráin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 10  Ciorcal comhrá sa bPortershed "> Nollaig 10  Ciorcal comhrá sa bPortershed  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 10  Ciorcal ceiliúrtha cuimhneachán bunú Cabairí na gCártaí in áit rúnda "> Nollaig 10  Ciorcal ceiliúrtha cuimhneachán bunú Cabairí na gCártaí in áit rúnda  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 11  Ócáid Ceiliúrtha in Áras na hOllscoile, Carna "> Nollaig 11  Ócáid Ceiliúrtha in Áras na hOllscoile, Carna  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 11  Ceardlann Bácáil na Nollag i dTeach na Gaeilge, Maigh Cuilin "> Nollaig 11  Ceardlann Bácáil na Nollag i dTeach na Gaeilge, Maigh Cuilin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 11  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Nollaig 11  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 11  Brioscaí agus ceardaíocht na Nollag i Leabharlann Inis Oírr "> Nollaig 11  Brioscaí agus ceardaíocht na Nollag i Leabharlann Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 11  Ceiliúradh na Nollag i Standún, An Spidéal agus Uachtar Ard "> Nollaig 11  Ceiliúradh na Nollag i Standún, An Spidéal agus Uachtar Ard  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 11  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionlach "> Nollaig 11  Ciorcal comhrá d’fhoghlaimeoirí i dTigh Mhaidhc Pháidín, Mionlach  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 12  Maidin chaife agus Carúil na Nollag i Leabharlann Cathrach na Gaillimhe "> Nollaig 12  Maidin chaife agus Carúil na Nollag i Leabharlann Cathrach na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 12  Brioscaí agus ceardaíocht na Nollag i Leabharlann Inis Oírr "> Nollaig 12  Brioscaí agus ceardaíocht na Nollag i Leabharlann Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 12  Céiliúradh na Nollag d’Aosaigh an Oileáin i Halla Rónáin, Árann "> Nollaig 12  Céiliúradh na Nollag d’Aosaigh an Oileáin i Halla Rónáin, Árann  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 12  Carúil na Carthanachta in Áras na Gaeilge, Ollscoil na Gaillimhe "> Nollaig 12  Carúil na Carthanachta in Áras na Gaeilge, Ollscoil na Gaillimhe  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 12  Ceardlann Maisiúchán na Nollag i gColáiste na bPiarsach, Ros Muc "> Nollaig 12  Ceardlann Maisiúchán na Nollag i gColáiste na bPiarsach, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 13  Ceiliúradh aitheantas oifigiúla mar scoileanna Gaeltachta do Scoil Chaomháin agus Coláiste Gobnait in Halla Inis Oírr "> Nollaig 13  Ceiliúradh aitheantas oifigiúla mar scoileanna Gaeltachta do Scoil Chaomháin agus Coláiste Gobnait in Halla Inis Oírr  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 13  Maidin Caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc "> Nollaig 13  Maidin Caifé in Ionad Cultúrtha an Phiarsaigh, Ros Muc  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 13  Taispeántas Cócaireachta Nollag i bPota Café "> Nollaig 13  Taispeántas Cócaireachta Nollag i bPota Café  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 14  Oíche shóisialta d’fhoghlaimeoirí Gaeilge – Tráth na gCeist i Teach Tábhairne Sharkey Anagaire "> Nollaig 14  Oíche shóisialta d’fhoghlaimeoirí Gaeilge – Tráth na gCeist i Teach Tábhairne Sharkey Anagaire  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 14  PíosaMe Péint agus NOsecco in Áras na nGael "> Nollaig 14  PíosaMe Péint agus NOsecco in Áras na nGael  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 16  Ciorcal comhrá i bPlámás "> Nollaig 16  Ciorcal comhrá i bPlámás  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 17  Ceardlann cártaí Nollag i Scoil Naomh Mhuire Gan Smal, Doire Bhanbh Camas "> Nollaig 17  Ceardlann cártaí Nollag i Scoil Naomh Mhuire Gan Smal, Doire Bhanbh Camas  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 17  Cluichí ‘boird’ Oilimpeach i dTeach Ósta, Inis Meáin "> Nollaig 17  Cluichí ‘boird’ Oilimpeach i dTeach Ósta, Inis Meáin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 18  Las Suas Maigh Cuilinn Cóisir Nollaig i dTeach na Gaeilge, Maigh Cuilinn "> Nollaig 18  Las Suas Maigh Cuilinn Cóisir Nollaig i dTeach na Gaeilge, Maigh Cuilinn  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 18  Ciorcal comhrá Aon Scéal san Harbour Hotel "> Nollaig 18  Ciorcal comhrá Aon Scéal san Harbour Hotel  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 18  Spraoi sa Gheimhreadh i dTeach na Gaeilge, Maigh Cuilin "> Nollaig 18  Spraoi sa Gheimhreadh i dTeach na Gaeilge, Maigh Cuilin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 19  Dráma Cruachás Dhaidí na Nollag in Halla Naomh Eoin, Inis Meáin "> Nollaig 19  Dráma Cruachás Dhaidí na Nollag in Halla Naomh Eoin, Inis Meáin  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 19  PopUp Gaeltacht i McGinn’s "> Nollaig 19  PopUp Gaeltacht i McGinn’s  </label> </div>
+<div class="option-item"> <label> <input type="checkbox" name="options" value="Nollaig 26  Rothaíocht, Raifil & Ceant i dTigh Mheaic,Carna ar mhaithe le Oispís na Gaillimhe"> Nollaig 26  Rothaíocht, Raifil & Ceant i dTigh Mheaic,Carna ar mhaithe le Oispís na Gaillimhe </label> </div>
+            <div class="custom-option">
+                <input type="text" id="customOption" placeholder=" ">
+                <button type="button" onclick="addCustomOption()">Rogha eile</button>
+            </div>
+            <br>
+            <button type="button" onclick="showReview()">Ar aghaidh</button>
+        </div>
+        <div id="reviewSection" class="hidden">
+            <h2>Rangnú</h2>
+            <div id="reviewOptions"></div>
+            <br>
+            <button type="button" onclick="goBack()">Ar ais</button>
+            <button type="submit">Críochnaithe</button>
+        </div>
+    </form>
+
+    <script>
+        let selectedOptions = [];
+
+        function addCustomOption() {
+            const customOptionValue = document.getElementById('customOption').value;
+            if (customOptionValue) {
+                const optionItem = document.createElement('div');
+                optionItem.className = 'option-item';
+
+                const label = document.createElement('label');
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.name = 'options';
+                checkbox.value = customOptionValue;
+                label.appendChild(checkbox);
+                label.appendChild(document.createTextNode(customOptionValue));
+
+                optionItem.appendChild(label);
+                document.getElementById('optionsSection').insertBefore(optionItem, document.querySelector('.custom-option'));
+                document.getElementById('customOption').value = ''; // Clear the input field
+            }
+        }
+
+
+function showReview() {
+    // Gather selected options
+    selectedOptions = Array.from(document.querySelectorAll('input[name="options"]:checked'))
+        .map(option => option.value);
+
+    const reviewOptionsContainer = document.getElementById('reviewOptions');
+    reviewOptionsContainer.innerHTML = ''; // Clear previous review options
+
+    selectedOptions.forEach(option => {
+        const reviewItem = document.createElement('div');
+        reviewItem.className = 'option-item';
+        reviewItem.textContent = option; // Display the option as plain text
+
+        const moveUpButton = document.createElement('button');
+        moveUpButton.textContent = 'Suas';
+        moveUpButton.className = 'move-buttons';
+        moveUpButton.type = 'button'; // Ensure it's a button, not a submit button
+        moveUpButton.onclick = () => moveOption(reviewItem, 'up');
+
+        const moveDownButton = document.createElement('button');
+        moveDownButton.textContent = 'Síos';
+        moveDownButton.className = 'move-buttons';
+        moveDownButton.type = 'button'; // Ensure it's a button, not a submit button
+        moveDownButton.onclick = () => moveOption(reviewItem, 'down');
+
+        reviewItem.appendChild(moveUpButton);
+        reviewItem.appendChild(moveDownButton);
+        reviewOptionsContainer.appendChild(reviewItem);
+    });
+
+    document.getElementById('optionsSection').classList.add('hidden');
+    document.getElementById('reviewSection').classList.remove('hidden');
+}
+
+function moveOption(optionItem, direction) {
+    const reviewOptionsContainer = document.getElementById('reviewOptions');
+    const items = Array.from(reviewOptionsContainer.children);
+    const currentIndex = items.indexOf(optionItem);
+
+    if (direction === 'up' && currentIndex > 0) {
+        reviewOptionsContainer.insertBefore(optionItem, items[currentIndex - 1]);
+    } else if (direction === 'down' && currentIndex < items.length - 1) {
+        reviewOptionsContainer.insertBefore(items[currentIndex + 1], optionItem);
+    }
+
+    // Update selectedOptions based on the new order, excluding button text
+    selectedOptions = Array.from(reviewOptionsContainer.children).map(item => item.childNodes[0].textContent.trim());
+}
+
+//document.getElementById('optionsForm').addEventListener('submit', function(event) {
+//    event.preventDefault(); // Prevent default form submission
+    
+    // Open a new tab and print the selected options
+//    const newTab = window.open();
+//    newTab.document.write('<pre>' + selectedOptions.join('\n') + '</pre>');
+//    newTab.document.close(); // Close the document for rendering
+//    newTab.focus(); // Focus on the new tab
+//});
+
+// Add an event listener to the form submission
+document.getElementById('optionsForm').addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent default form submission
+
+    // Open a new tab for displaying selected options
+    const newTab = window.open();
+
+    // Create a styled HTML content for the new tab
+    const content = `
+        <html>
+            <head>
+                <title>Selected Options</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 20px;
+                        padding: 20px;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+                    pre {
+                        background-color: #fff;
+                        border: 1px solid #ccc;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>Do 2024... Sin sin...  </h1>
+                <pre>${selectedOptions.join('\n')}</pre>
+            </body>
+        </html>
+    `;
+
+    // Write the content and close the document for rendering
+    newTab.document.write(content);
+    newTab.document.close(); 
+    newTab.focus(); // Focus on the new tab
+});
+
+
+
+
+    </script>
+</body>
+</html>
+
